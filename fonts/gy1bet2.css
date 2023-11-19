@@ -1,7 +1,7 @@
 @font-face {
     font-family: "gy1bet2";
-    src: url("./gy1bet2.ttf?5868bcda16579e6842bfba011753d857") format("truetype"),
-url("./gy1bet2.woff?5868bcda16579e6842bfba011753d857") format("woff");
+    src: url("./gy1bet2.ttf?c7c65e2c0ac73710b8bc088544691bc9") format("truetype"),
+url("./gy1bet2.woff?c7c65e2c0ac73710b8bc088544691bc9") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -20,9 +20,6 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 }
 .icon-comma:before {
     content: "\2c";
-}
-.icon--:before {
-    content: "\2d";
 }
 .icon-a:before {
     content: "\61";
@@ -81,6 +78,9 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-U-0022:before {
     content: "\22";
 }
+.icon-U-002D:before {
+    content: "\2d";
+}
 .icon-U-002E:before {
     content: "\2e";
 }
@@ -98,7 +98,4 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 }
 .icon-z:before {
     content: "\7a";
-}
-.icon-:before {
-    content: "\f101";
 }
