@@ -1,7 +1,7 @@
 @font-face {
     font-family: "gy1bet2";
-    src: url("./gy1bet2.ttf?69e0a05e75c9f3887d2c554b75e16df7") format("truetype"),
-url("./gy1bet2.woff?69e0a05e75c9f3887d2c554b75e16df7") format("woff");
+    src: url("./gy1bet2.ttf?5868bcda16579e6842bfba011753d857") format("truetype"),
+url("./gy1bet2.woff?5868bcda16579e6842bfba011753d857") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -15,6 +15,15 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-exclamation:before {
+    content: "\21";
+}
+.icon-comma:before {
+    content: "\2c";
+}
+.icon--:before {
+    content: "\2d";
+}
 .icon-a:before {
     content: "\61";
 }
@@ -66,6 +75,18 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-t:before {
     content: "\74";
 }
+.icon-U-0020:before {
+    content: "\20";
+}
+.icon-U-0022:before {
+    content: "\22";
+}
+.icon-U-002E:before {
+    content: "\2e";
+}
+.icon-U-003F:before {
+    content: "\3f";
+}
 .icon-u:before {
     content: "\75";
 }
@@ -77,4 +98,7 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 }
 .icon-z:before {
     content: "\7a";
+}
+.icon-:before {
+    content: "\f101";
 }

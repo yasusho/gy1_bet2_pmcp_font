@@ -7,7 +7,13 @@ const glyph_map: { [key: string]: number } = {};
 const files = fs.readdirSync(`${fix_path}/`);
 files.forEach((file, index) => {
   if (file.slice(-4) !== ".svg") return;
-  {
+  if (file.slice(0, 2).toUpperCase() === "U+") {
+    // U+002F.svg
+    //   ^^^^
+    const codepoint = file.slice(2, -4);
+    glyph_map[file.slice(0, -4)] = parseInt(codepoint, 16);
+    console.log(file.slice(0, -4), codepoint);
+  } else {
     glyph_map[file[0]] = file.codePointAt(0)!;
     console.log(file[0], file.codePointAt(0)!.toString(16))
   }
