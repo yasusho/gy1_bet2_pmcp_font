@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "linzklar_rounded";
-    src: url("./linzklar_rounded.ttf?7163d2ddec0b13dbafd35ef73a24748a") format("truetype"),
-url("./linzklar_rounded.woff?7163d2ddec0b13dbafd35ef73a24748a") format("woff");
+    font-family: "gy1bet2";
+    src: url("./gy1bet2.ttf?34c42b3265e78bde42a6f3c6d3fbb581") format("truetype"),
+url("./gy1bet2.woff?34c42b3265e78bde42a6f3c6d3fbb581") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
-    font-family: linzklar_rounded !important;
+    font-family: gy1bet2 !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;

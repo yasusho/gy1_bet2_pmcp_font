@@ -26,9 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fantasticon_1 = require("fantasticon");
 const fs = __importStar(require("fs"));
 (async function () {
-    const style_name = "rounded";
-    const fix_path = "rounded/fixed";
-    const out_path = `fonts/${style_name}`;
+    const fix_path = "glyphs";
+    const out_path = `fonts`;
     const glyph_map = {};
     const files = fs.readdirSync(`${fix_path}/`);
     files.forEach((file, index) => {
@@ -45,7 +44,7 @@ const fs = __importStar(require("fs"));
     (0, fantasticon_1.generateFonts)({
         inputDir: `${fix_path}/`,
         outputDir: `${out_path}/`,
-        name: `linzklar_${style_name}`,
+        name: `gy1bet2`,
         fontTypes: [fantasticon_1.FontAssetType.TTF, fantasticon_1.FontAssetType.WOFF],
         assetTypes: [
             fantasticon_1.OtherAssetType.CSS,
@@ -57,22 +56,22 @@ const fs = __importStar(require("fs"));
         codepoints: glyph_map
     }).then(results => {
         console.log(results);
-        fs.readFile(`${out_path}/linzklar_${style_name}.html`, 'utf8', function (err, data) {
+        fs.readFile(`${out_path}/gy1bet2.html`, 'utf8', function (err, data) {
             if (err) {
                 return console.log(err);
             }
             const result = replace_problematic_css(data);
-            fs.writeFile(`${out_path}/linzklar_${style_name}.html`, result, 'utf8', function (err) {
+            fs.writeFile(`${out_path}/gy1bet2.html`, result, 'utf8', function (err) {
                 if (err)
                     return console.log(err);
             });
         });
-        fs.readFile(`${out_path}/linzklar_${style_name}.css`, 'utf8', function (err, data) {
+        fs.readFile(`${out_path}/gy1bet2.css`, 'utf8', function (err, data) {
             if (err) {
                 return console.log(err);
             }
             const result = replace_problematic_css(data);
-            fs.writeFile(`${out_path}/linzklar_${style_name}.css`, result, 'utf8', function (err) {
+            fs.writeFile(`${out_path}/gy1bet2.css`, result, 'utf8', function (err) {
                 if (err)
                     return console.log(err);
             });
