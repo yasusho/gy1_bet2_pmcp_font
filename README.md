@@ -5,3 +5,5 @@ npm install
 npx tsc
 node to_font.js
 ```
+
+main.svg は下書き。本編画像は glyphs/ フォルダ。
